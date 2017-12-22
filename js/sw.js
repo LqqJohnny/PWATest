@@ -1,5 +1,5 @@
-self.addEventListener('fetch', function(event) {     ❶
-  if (/\.jpg$/.test(event.request.url)) {            ❷
-    event.respondWith(fetch('/img/game.jpg')); ❸
+self.addEventListener('fetch', function(event) {     
+  if (/\.jpg$/.test(event.request.url)) {
+    event.respondWith(fetch('/img/game.jpg'));
   }
 });
