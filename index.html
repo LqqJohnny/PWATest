@@ -8,12 +8,12 @@
 </head>
 <body>
     <h1>渐进式网络应用</h1>
-    <img src="/img/008.jpg" alt="">
+    <img src="./img/008.jpg" alt="">
 
     <script>
   // 注册 service worker
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/js/sw.js').then(function(registration) {
+    navigator.serviceWorker.register('./js/sw.js').then(function(registration) {
       // 注册成功
       console.log('ServiceWorker 注册成功  with scope: ', registration.scope);
     }).catch(function(err) {
